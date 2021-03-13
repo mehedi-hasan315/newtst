@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+body{
+    height: 100vh;
+    width: 100%;
+   font-family: 'Open Sans';
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.single-exp{
+    width: 400px;
+    height: 370px;
+    background: #f3f3f3;
+    padding: 50px 40px;
+    position: relative;
+}
+.single-exp:before{
+content:'';
+position: absolute;
+top: 0px;
+left: 0px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 90px 90px 0 0;
+border-color: #00ffa2 transparent transparent transparent;
+z-index: -1;
+transition: .3s;
+}
+.single-exp:hover:before{
+    top: -7px;
+    left: -7px;
+}
+.single-exp:after {
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 90px 90px;
+    border-color: transparent transparent  deepskyblue transparent;
+    z-index: -1;
+    transition: .3s;
+    }
+    .single-exp:hover:after{
+        bottom: -7px;
+        right: -7px;
+    }
+.exp-icon{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    line-height: 86px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.exp-icon:before{
+content: '';
+position: absolute;
+top: -4px;
+left: 7px;
+height: 9px;
+width: 9px;
+background: rgb(110, 83, 173);
+}
+.exp-icon:after{
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    right: -3px;
+    height: 9px;
+    width: 9px;
+    background: blue;
+    }
+.exp-icon i{
+font-size: 30px;
+color: gray;
+}
+.exp-details h4{
+    font-size: 30px;
+    color: darkturquoise;
+    font-weight: 800px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.exp-details span{
+    display: block;
+    color: #6d6262aa;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.exp-details p{
+    color: #666060aa;
+    font-size: 19px;
+}
+.single-exp:hover h4{
+    color: aqua;
+}
